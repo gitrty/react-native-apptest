@@ -29,6 +29,10 @@ const App = () => {
     <>
       <View style={styles.top}>
         <Text>123</Text>
+        <View style={{ width: 100, height: 100, backgroundColor: 'green' }}></View>
+      </View>
+      <View style={styles.mid}>
+        <Text>456</Text>
       </View>
     </>
   );
@@ -36,9 +40,15 @@ const App = () => {
 
 const styles = StyleSheet.create({
   top: {
-    width: 100,
+    width: 300,
     height: 100,
-    backgroundColor: 'red'
+    backgroundColor: 'red',
+    flexDirection:'row'
+  },
+  mid: {
+    width: 300,
+    height: 100,
+    backgroundColor: 'gold'
   }
 })
 
